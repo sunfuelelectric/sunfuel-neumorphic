@@ -45,18 +45,14 @@ img {
     background-image: url("../../images/etrails/3.jpg");
 }
 
-#img-slide4 {
-    background-image: url("../../images/etrails/2.jpg");
-}
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
     top: calc(60vh + .25in);
     width: .4in;
-    padding: 10px;    
+    height: .4in;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 1.5em;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
