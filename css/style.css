@@ -39,7 +39,7 @@ header {
     position: fixed;
     z-index: 98;
     width: 100%;
-    height: .75in;
+    height: .5in;
     box-shadow: 0 0 10px var(--th-l-shadow);
     background: var(--th-l-background);
 }
@@ -100,8 +100,8 @@ section {
     display: grid;
     place-items: center;
     box-sizing: border-box;
-    height: .5in;
-    width: .5in;
+    height: .4in;
+    width: .4in;
     padding: 2%;
     cursor: pointer;
     z-index: 2;
@@ -125,12 +125,12 @@ section {
 
 .header-icon {
     position: absolute;
-    z-index: 99;
+    z-index: 2;
     left: 50%;
-    top: 10px;
-    transform: translateX(-50%);
-    height: .5in;
-    width: .5in;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: .4in;
+    width: .4in;
     padding: 0px;
     cursor: pointer;
     border-radius: 50%;
@@ -159,6 +159,7 @@ section {
     font-size: 1em;
     text-align: center;
     border-radius: var(--r-med);
+    cursor: pointer;
 }
 
 /* ----------------------------- */
