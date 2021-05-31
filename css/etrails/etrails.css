@@ -36,10 +36,11 @@ img {
 .img-container {
     position: relative;
     height: calc(80vh - .25in);
-    width: 60%;
+    width: 90%;
     left: 50%;
     top: calc(50% + .25in);
     transform: translate(-50%, -50%);
+    
 }
 
 .img-slides {
@@ -49,13 +50,14 @@ img {
 .img-slide {
     height: 64vh;
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 20px 20px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: 5px 5px 10px var(--th-l-shadow), -5px -5px 10px var(--th-l-light);
 }
 
 #img-slide1 {
@@ -111,24 +113,25 @@ img {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 96%;
     width: auto;
-    padding: 16px;
+    padding: 5px;
     margin-top: -50px;
     color: var(--offBlack);
     font-weight: 500;
     font-size: 40px;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    -webkit-user-select: none;
+    -webkit-user-select: none;    
+    border-radius: 20px;
 }
 
 .prev {
-    left: -10%;
+    left: 20%;
 }
 
 .next {
-    right: -10%;
+    right: 20%;
     /* border-radius: 3px 0 0 3px; */
 }
 
