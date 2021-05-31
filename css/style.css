@@ -2,6 +2,9 @@
     --th-l-background: #ededed;
     --th-l-shadow: #cdcdcd;
     --th-l-light: #ffffff;
+    --th-l-link: #378cbc;
+    --th-l-link-a: #a4a4a4;
+    --th-l-tx-b: #2f2f2f;
     /* --offWhite: #fefefe;
     --offBlack: #222222;
     --black: #000000;
@@ -58,10 +61,13 @@ section {
 /* ------------------ */
 
 .neu-flat-ex {
+    color: var(--th-l-link-a);
     background: var(--th-l-background);
     box-shadow: 5px 5px 10px var(--th-l-shadow), -5px -5px 10px var(--th-l-light);
 }
-.neu-flat-ex:active{
+
+.neu-flat-ex:active {
+    color: var(--th-l-link);
     box-shadow: inset 5px 5px 10px var(--th-l-shadow), inset -5px -5px 10px var(--th-l-light);
 }
 
@@ -80,10 +86,6 @@ section {
     box-shadow: 5px 5px 10px var(--th-l-shadow), -5px -5px 10px var(--th-l-light);
 }
 
-.glass {
-    backdrop-filter: blur(30px);
-}
-
 .full-back {
     background-position: center;
     background-size: contain;
@@ -91,18 +93,20 @@ section {
 }
 
 .header-icon {
-    position: fixed;
+    position: absolute;
     z-index: 99;
     left: 50%;
     top: 10px;
     transform: translateX(-50%);
-    height: .75in;
-    width: .75in;
+    height: .5in;
+    width: .5in;
     padding: 0px;
     cursor: pointer;
     border-radius: 50%;
     background-image: url("../logo/sunfuel.svg");
 }
+
+/* ----------------------------- */
 
 .nav-container {
     height: 100%;
@@ -194,6 +198,10 @@ section {
 }
 
 /* ------------------ */
+
+.glass {
+    backdrop-filter: blur(30px);
+}
 
 .x-center {
     position: relative;

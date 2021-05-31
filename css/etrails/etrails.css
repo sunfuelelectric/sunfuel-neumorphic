@@ -1,32 +1,6 @@
-/* .scroll-container {
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-snap-type: y mandatory;
-    position: relative;
-}
-
-section {
-    height: 100%;
-    scroll-snap-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 .snap {
     height: 100%;
     width: 100%;
-}
-
-.fullArea {
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 img {
@@ -35,12 +9,11 @@ img {
 
 .img-container {
     position: relative;
-    height: calc(80vh - .25in);
+    height: 60vh;
     width: 90%;
     left: 50%;
-    top: calc(50% + .25in);
-    transform: translate(-50%, -50%);
-    
+    top: .75in;
+    transform: translateX(-50%);
 }
 
 .img-slides {
@@ -48,7 +21,7 @@ img {
 }
 
 .img-slide {
-    height: 64vh;
+    height: 60vh;
     width: 100%;
     border-radius: 20px 20px 20px 20px;
     position: relative;
@@ -76,6 +49,39 @@ img {
     background-image: url("../../images/etrails/2.jpg");
 }
 
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: calc(60vh + .25in);
+    width: .4in;
+    padding: 10px;    
+    font-weight: 500;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.prev {
+    left: 20%;
+}
+
+.next {
+    right: 20%;
+    /* border-radius: 3px 0 0 3px; */
+}
+
+/* -------------------------------------------------- */
+
+.check {
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    bottom: 5%;
+}
+
 .img-row {
     height: 16vh;
     width: 100%;
@@ -93,46 +99,21 @@ img {
 }
 
 #img-control-1 {
-    background-image: url("../../images/etrails/1.jpg");
+    /* background-image: url("../../images/etrails/1.jpg"); */
     border-radius: 0 0 0 20px;
 }
 
 #img-control-2 {
-    background-image: url("../../images/etrails/2.jpg");
+    /* background-image: url("../../images/etrails/2.jpg"); */
 }
 
 #img-control-3 {
-    background-image: url("../../images/etrails/3.jpg");
+    /* background-image: url("../../images/etrails/3.jpg"); */
 }
 
 #img-control-4 {
-    background-image: url("../../images/etrails/2.jpg");
+    /* background-image: url("../../images/etrails/2.jpg"); */
     border-radius: 0 0 20px 0;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 96%;
-    width: auto;
-    padding: 5px;
-    margin-top: -50px;
-    color: var(--offBlack);
-    font-weight: 500;
-    font-size: 40px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;    
-    border-radius: 20px;
-}
-
-.prev {
-    left: 20%;
-}
-
-.next {
-    right: 20%;
-    /* border-radius: 3px 0 0 3px; */
 }
 
 .img-control {
