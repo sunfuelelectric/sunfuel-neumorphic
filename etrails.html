@@ -36,8 +36,23 @@
             <div></div>
         </div>
     </div>
-    <div class="header-icon full-back neu-flat-ex" onclick="navigateTo('home')"></div>
+    <header>
+        <div id="nav-menu-mob" class="hamBurger neu-flat-ex" onclick="toggleNavMenu()">
+            <div class="hamBurgerDiv"></div>
+            <div class="hamBurgerDiv"></div>
+            <div class="hamBurgerDiv"></div>
+        </div>
+        <div class="header-icon full-back neu-flat-ex" onclick="navigateTo('home')"></div>
+    </header>
     <main id="content" class="site-content" role="main">
+        <div id="nav-container">
+            <div class="nav-menu neu-flat-ex">EV CHARGING</div>
+            <div class="nav-menu neu-flat-ex">THE NETWORK</div>
+            <div class="nav-menu neu-flat-ex">ALL CHARGERS</div>
+            <div class="nav-menu neu-flat-ex">E-TRAILS</div>
+            <div class="nav-menu neu-flat-ex">APP</div>
+            <div class="nav-menu neu-flat-ex">ABOUT US</div>
+        </div>
         <section>
             <div class="snap">
                 <div class="img-container">
@@ -55,7 +70,7 @@
                     </div>
                     <a class="prev neu-flat-ex" onclick="plusSlides(-1)">❮</a>
                     <a class="next neu-flat-ex" onclick="plusSlides(1)">❯</a>
-                    
+
                     <!-- <div class="img-row">
                         <div id="img-control-1" class="img-control" onclick="currentSlide(1)"></div>
                         <div id="img-control-2" class="img-control" onclick="currentSlide(2)"></div>

@@ -25,3 +25,18 @@ function showSlides(n) {
   // controls[slideIndex - 1].className += " active";
   ScrollTrigger.refresh()
 }
+var navMenuOpen = false;
+function toggleNavMenu() {
+  if (!navMenuOpen) {
+    $("#content").animate({ left: "100vw" });
+    $("#nav-container").animate({ left: 0 });
+    document.getElementById("nav-menu-mob").classList.toggle("hamActive");
+    navMenuOpen = !navMenuOpen;
+  }
+  else {
+    $("#content").animate({ left: 0 });
+    $("#nav-container").animate({ left: "-100vw" });
+    document.getElementById("nav-menu-mob").classList.toggle("hamActive");
+    navMenuOpen = !navMenuOpen;
+  }
+}

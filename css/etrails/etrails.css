@@ -12,7 +12,7 @@ img {
     height: 60vh;
     width: 90%;
     left: 50%;
-    top: .75in;
+    top: 1in;
     transform: translateX(-50%);
 }
 
