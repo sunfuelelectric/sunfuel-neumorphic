@@ -23,7 +23,8 @@ img {
 .img-slide {
     height: 60vh;
     width: 100%;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: var(--r-large);
+    border: 1px solid var(--th-l-light);
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -53,10 +54,9 @@ img {
     height: .4in;
     font-weight: 500;
     font-size: 1.5em;
-    border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-    border-radius: 10px;
+    border-radius: var(--r-med);
     text-align: center;
 }
 
