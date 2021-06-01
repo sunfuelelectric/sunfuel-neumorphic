@@ -147,6 +147,7 @@ section {
     left: -100vw;
     width: 100vw;
     height: 90vh;
+    min-height: 6in;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
